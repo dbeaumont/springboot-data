@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Application de Gestion de Données</h1>
+  
+    <div class="form-section">
+      <h2>Ajouter une Nouvelle Entrée</h2>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="newData.content" placeholder="Contenu">
+        <button (click)="submitData()">Soumettre</button>
+      </div>
+    </div>
+  
+    <div class="data-section">
+      <h2>Données Existantes</h2>
+      <div class="data-list">
+        <div class="data-item" *ngFor="let item of data">
+          <div class="data-content">
+            <span class="timestamp">{{ item.timestamp | date:'medium' }}</span>
+            <p>{{ item.content }}</p>
+          </div>
+          <span class="status" [ngClass]="item.status">{{ item.status }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
