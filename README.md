@@ -11,8 +11,8 @@ A full-stack demonstration project showcasing hexagonal architecture principles 
 
 ## Overview
 This project implements a simple message application that:
- - Displays a “Hello World” message from the database
- - Allows creating new messages via REST API
+ - Displays existing messages from the database via Get REST API
+ - Allows creating new messages via Post REST API
  - Demonstrates clean architecture principles
  - Provides a fully containerized development environment
 
@@ -96,7 +96,7 @@ cd springboot-data
 ```
  6. Access the application
     - Frontend: http://localhost:4200
-    - Backend API: http://localhost:8080/api/message
+    - Backend API: http://localhost:8080/api/data
 
  7. Stop the application stack
 ```bash
