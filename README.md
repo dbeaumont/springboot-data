@@ -60,7 +60,8 @@ The backend follows the hexagonal (ports and adapters) architecture pattern:
 │   ├── domain/                       # Domain module
 │   ├── application/                  # Application module
 │   ├── infrastructure/               # Infrastructure module
-│   └── bootstrap/                    # SpringBoot application module
+│   ├── bootstrap/                    # SpringBoot application module
+│   └── Dockerfile
 │
 ├── docker-compose.yml
 └── README.md
